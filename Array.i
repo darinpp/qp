@@ -14,7 +14,10 @@ namespace quadprogpp {
     ~Matrix();  
   
     inline void set(const T* a, unsigned int n, unsigned int m);
+    inline void setRow(unsigned int idx, const Vector<T>& v);
+    inline void setColumn(const unsigned int index, const Vector<T>& v);
 
+    inline void resize(const T& a, const unsigned int n, const unsigned int m);
     inline unsigned int nrows() const { return n; } // number of rows
     inline unsigned int ncols() const { return m; } // number of columns
   };
@@ -25,7 +28,8 @@ namespace quadprogpp {
     ~Vector();
 
     inline void set(const T* a, const unsigned int n);
-   
+
+    inline void resize(const T& a, const unsigned int n);
     inline unsigned int size() const;
   };
 

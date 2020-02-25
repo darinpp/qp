@@ -250,7 +250,7 @@ SWIGINTERN double quadprogpp_Vector_Sl_double_Sg__at(quadprogpp::Vector< double 
 extern "C" {
 #endif
 
-void _wrap_Swig_free_qp_81cbf099b3eba5bb(void *_swig_go_0) {
+void _wrap_Swig_free_qp_52773f8104ddbf56(void *_swig_go_0) {
   void *arg1 = (void *) 0 ;
   
   arg1 = *(void **)&_swig_go_0; 
@@ -260,7 +260,7 @@ void _wrap_Swig_free_qp_81cbf099b3eba5bb(void *_swig_go_0) {
 }
 
 
-void *_wrap_Swig_malloc_qp_81cbf099b3eba5bb(intgo _swig_go_0) {
+void *_wrap_Swig_malloc_qp_52773f8104ddbf56(intgo _swig_go_0) {
   int arg1 ;
   void *result = 0 ;
   void *_swig_go_result;
@@ -273,7 +273,7 @@ void *_wrap_Swig_malloc_qp_81cbf099b3eba5bb(intgo _swig_go_0) {
 }
 
 
-double _wrap_solve_quadprog_qp_81cbf099b3eba5bb(quadprogpp::Matrix< double > *_swig_go_0, quadprogpp::Vector< double > *_swig_go_1, quadprogpp::Matrix< double > *_swig_go_2, quadprogpp::Vector< double > *_swig_go_3, quadprogpp::Matrix< double > *_swig_go_4, quadprogpp::Vector< double > *_swig_go_5, quadprogpp::Vector< double > *_swig_go_6) {
+double _wrap_solve_quadprog_qp_52773f8104ddbf56(quadprogpp::Matrix< double > *_swig_go_0, quadprogpp::Vector< double > *_swig_go_1, quadprogpp::Matrix< double > *_swig_go_2, quadprogpp::Vector< double > *_swig_go_3, quadprogpp::Matrix< double > *_swig_go_4, quadprogpp::Vector< double > *_swig_go_5, quadprogpp::Vector< double > *_swig_go_6) {
   quadprogpp::Matrix< double > *arg1 = 0 ;
   quadprogpp::Vector< double > *arg2 = 0 ;
   quadprogpp::Matrix< double > *arg3 = 0 ;
@@ -298,7 +298,7 @@ double _wrap_solve_quadprog_qp_81cbf099b3eba5bb(quadprogpp::Matrix< double > *_s
 }
 
 
-quadprogpp::Matrix< double > *_wrap_new_matrix_qp_81cbf099b3eba5bb() {
+quadprogpp::Matrix< double > *_wrap_new_matrix_qp_52773f8104ddbf56() {
   quadprogpp::Matrix< double > *result = 0 ;
   quadprogpp::Matrix< double > *_swig_go_result;
   
@@ -309,7 +309,7 @@ quadprogpp::Matrix< double > *_wrap_new_matrix_qp_81cbf099b3eba5bb() {
 }
 
 
-void _wrap_delete_matrix_qp_81cbf099b3eba5bb(quadprogpp::Matrix< double > *_swig_go_0) {
+void _wrap_delete_matrix_qp_52773f8104ddbf56(quadprogpp::Matrix< double > *_swig_go_0) {
   quadprogpp::Matrix< double > *arg1 = (quadprogpp::Matrix< double > *) 0 ;
   
   arg1 = *(quadprogpp::Matrix< double > **)&_swig_go_0; 
@@ -319,7 +319,7 @@ void _wrap_delete_matrix_qp_81cbf099b3eba5bb(quadprogpp::Matrix< double > *_swig
 }
 
 
-void _wrap_matrix_set_qp_81cbf099b3eba5bb(quadprogpp::Matrix< double > *_swig_go_0, _goslice_ _swig_go_1, intgo _swig_go_2, intgo _swig_go_3) {
+void _wrap_matrix_set_qp_52773f8104ddbf56(quadprogpp::Matrix< double > *_swig_go_0, _goslice_ _swig_go_1, intgo _swig_go_2, intgo _swig_go_3) {
   quadprogpp::Matrix< double > *arg1 = (quadprogpp::Matrix< double > *) 0 ;
   double *arg2 = (double *) 0 ;
   unsigned int arg3 ;
@@ -342,7 +342,51 @@ void _wrap_matrix_set_qp_81cbf099b3eba5bb(quadprogpp::Matrix< double > *_swig_go
 }
 
 
-intgo _wrap_matrix_nrows_qp_81cbf099b3eba5bb(quadprogpp::Matrix< double > *_swig_go_0) {
+void _wrap_matrix_setRow_qp_52773f8104ddbf56(quadprogpp::Matrix< double > *_swig_go_0, intgo _swig_go_1, quadprogpp::Vector< double > *_swig_go_2) {
+  quadprogpp::Matrix< double > *arg1 = (quadprogpp::Matrix< double > *) 0 ;
+  unsigned int arg2 ;
+  quadprogpp::Vector< double > *arg3 = 0 ;
+  
+  arg1 = *(quadprogpp::Matrix< double > **)&_swig_go_0; 
+  arg2 = (unsigned int)_swig_go_1; 
+  arg3 = *(quadprogpp::Vector< double > **)&_swig_go_2; 
+  
+  (arg1)->setRow(arg2,(quadprogpp::Vector< double > const &)*arg3);
+  
+}
+
+
+void _wrap_matrix_setColumn_qp_52773f8104ddbf56(quadprogpp::Matrix< double > *_swig_go_0, intgo _swig_go_1, quadprogpp::Vector< double > *_swig_go_2) {
+  quadprogpp::Matrix< double > *arg1 = (quadprogpp::Matrix< double > *) 0 ;
+  unsigned int arg2 ;
+  quadprogpp::Vector< double > *arg3 = 0 ;
+  
+  arg1 = *(quadprogpp::Matrix< double > **)&_swig_go_0; 
+  arg2 = (unsigned int)_swig_go_1; 
+  arg3 = *(quadprogpp::Vector< double > **)&_swig_go_2; 
+  
+  (arg1)->setColumn(arg2,(quadprogpp::Vector< double > const &)*arg3);
+  
+}
+
+
+void _wrap_matrix_resize_qp_52773f8104ddbf56(quadprogpp::Matrix< double > *_swig_go_0, double _swig_go_1, intgo _swig_go_2, intgo _swig_go_3) {
+  quadprogpp::Matrix< double > *arg1 = (quadprogpp::Matrix< double > *) 0 ;
+  double *arg2 = 0 ;
+  unsigned int arg3 ;
+  unsigned int arg4 ;
+  
+  arg1 = *(quadprogpp::Matrix< double > **)&_swig_go_0; 
+  arg2 = (double *)&_swig_go_1; 
+  arg3 = (unsigned int)_swig_go_2; 
+  arg4 = (unsigned int)_swig_go_3; 
+  
+  (arg1)->resize((double const &)*arg2,arg3,arg4);
+  
+}
+
+
+intgo _wrap_matrix_nrows_qp_52773f8104ddbf56(quadprogpp::Matrix< double > *_swig_go_0) {
   quadprogpp::Matrix< double > *arg1 = (quadprogpp::Matrix< double > *) 0 ;
   unsigned int result;
   intgo _swig_go_result;
@@ -355,7 +399,7 @@ intgo _wrap_matrix_nrows_qp_81cbf099b3eba5bb(quadprogpp::Matrix< double > *_swig
 }
 
 
-intgo _wrap_matrix_ncols_qp_81cbf099b3eba5bb(quadprogpp::Matrix< double > *_swig_go_0) {
+intgo _wrap_matrix_ncols_qp_52773f8104ddbf56(quadprogpp::Matrix< double > *_swig_go_0) {
   quadprogpp::Matrix< double > *arg1 = (quadprogpp::Matrix< double > *) 0 ;
   unsigned int result;
   intgo _swig_go_result;
@@ -368,7 +412,7 @@ intgo _wrap_matrix_ncols_qp_81cbf099b3eba5bb(quadprogpp::Matrix< double > *_swig
 }
 
 
-quadprogpp::Vector< double > *_wrap_new_vector_qp_81cbf099b3eba5bb() {
+quadprogpp::Vector< double > *_wrap_new_vector_qp_52773f8104ddbf56() {
   quadprogpp::Vector< double > *result = 0 ;
   quadprogpp::Vector< double > *_swig_go_result;
   
@@ -379,7 +423,7 @@ quadprogpp::Vector< double > *_wrap_new_vector_qp_81cbf099b3eba5bb() {
 }
 
 
-void _wrap_delete_vector_qp_81cbf099b3eba5bb(quadprogpp::Vector< double > *_swig_go_0) {
+void _wrap_delete_vector_qp_52773f8104ddbf56(quadprogpp::Vector< double > *_swig_go_0) {
   quadprogpp::Vector< double > *arg1 = (quadprogpp::Vector< double > *) 0 ;
   
   arg1 = *(quadprogpp::Vector< double > **)&_swig_go_0; 
@@ -389,7 +433,7 @@ void _wrap_delete_vector_qp_81cbf099b3eba5bb(quadprogpp::Vector< double > *_swig
 }
 
 
-void _wrap_vector_set_qp_81cbf099b3eba5bb(quadprogpp::Vector< double > *_swig_go_0, _goslice_ _swig_go_1, intgo _swig_go_2) {
+void _wrap_vector_set_qp_52773f8104ddbf56(quadprogpp::Vector< double > *_swig_go_0, _goslice_ _swig_go_1, intgo _swig_go_2) {
   quadprogpp::Vector< double > *arg1 = (quadprogpp::Vector< double > *) 0 ;
   double *arg2 = (double *) 0 ;
   unsigned int arg3 ;
@@ -410,7 +454,21 @@ void _wrap_vector_set_qp_81cbf099b3eba5bb(quadprogpp::Vector< double > *_swig_go
 }
 
 
-intgo _wrap_vector_size_qp_81cbf099b3eba5bb(quadprogpp::Vector< double > *_swig_go_0) {
+void _wrap_vector_resize_qp_52773f8104ddbf56(quadprogpp::Vector< double > *_swig_go_0, double _swig_go_1, intgo _swig_go_2) {
+  quadprogpp::Vector< double > *arg1 = (quadprogpp::Vector< double > *) 0 ;
+  double *arg2 = 0 ;
+  unsigned int arg3 ;
+  
+  arg1 = *(quadprogpp::Vector< double > **)&_swig_go_0; 
+  arg2 = (double *)&_swig_go_1; 
+  arg3 = (unsigned int)_swig_go_2; 
+  
+  (arg1)->resize((double const &)*arg2,arg3);
+  
+}
+
+
+intgo _wrap_vector_size_qp_52773f8104ddbf56(quadprogpp::Vector< double > *_swig_go_0) {
   quadprogpp::Vector< double > *arg1 = (quadprogpp::Vector< double > *) 0 ;
   unsigned int result;
   intgo _swig_go_result;
@@ -423,7 +481,7 @@ intgo _wrap_vector_size_qp_81cbf099b3eba5bb(quadprogpp::Vector< double > *_swig_
 }
 
 
-double _wrap_vector_at_qp_81cbf099b3eba5bb(quadprogpp::Vector< double > *_swig_go_0, intgo _swig_go_1) {
+double _wrap_vector_at_qp_52773f8104ddbf56(quadprogpp::Vector< double > *_swig_go_0, intgo _swig_go_1) {
   quadprogpp::Vector< double > *arg1 = (quadprogpp::Vector< double > *) 0 ;
   unsigned int arg2 ;
   double result;
