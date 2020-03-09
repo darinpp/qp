@@ -10,12 +10,11 @@
 
 package qp
 
-type Node struct {
+type ClusterAllocator struct {
+	RangePlacements []RangePlacement
+}
 
-	CurrentReplicaCount int // The current number of replicas
-	OptimalReplicaCount int // The optimal number of replicas is populated by the optimizer.
-	ReplicaCountLimit int // A limit on the maximum number of replicas that can be on this node (-1 for no limit)
+//  Compute the score of the range placements.
+func (ca *ClusterAllocator) ComputeRangePlacementScores() {
 
-	// Hierarchical list of localities for the node.
-	Locality []string
 }
